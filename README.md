@@ -1,17 +1,24 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+#Bike Share Project
 
-### Date created
-Include the date you created this project and README file.
+this is data analysis project aim to give a an easy report for any user 
+to help him understand the data and then make the right decisions.
 
-### Project Title
-Replace the Project Title
+## how to use it 
 
-### Description
-Describe what your project is about and what it does
+once you start the progtam you with see the n next input
+`inter the name of the city you want to look for in this list [chicago , new york city , washington]`
+you should enter the input with correct insensitive spilling.
 
-### Files used
-Include the files used
+continue like that for the rest of the inputs.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+## how to see samle of the data
+
+after you see the report you wiil see the next massage:
+`enter 'yes' if you want to see the first five rows of data.`
+enter **yes** to see the sample of the data.
+and as long you enter **yes** you will see more data.
+
+## how to close the program
+`Would you like to restart? Enter yes or no.`
+enter **no** to close the program, and **yes** to look for different dataset.
 
