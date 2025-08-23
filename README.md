@@ -3,6 +3,15 @@
 this is data analysis project aim to give an easy report for any user 
 to help him understand the data and then make the right decisions.
 
+## libraries used in the project
+
+*pandas
+*numpy
+
+ built in library such as **time**
+
+
+
 ## how to use it 
 
 once you start the program you with see the n next input
