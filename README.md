@@ -5,10 +5,9 @@ to help him understand the data and then make the right decisions.
 
 ## libraries used in the project
 
-*pandas
-*numpy
-
- built in library such as **time**
+-pandas
+-numpy
+-built in library such as **time**
 
 
 
