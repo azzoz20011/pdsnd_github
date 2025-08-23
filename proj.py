@@ -1,7 +1,6 @@
 import time
 import pandas as pd 
 import numpy as np 
-from datetime import datetime
 
 #import streamlit as st
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -121,10 +120,10 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    val = df['month'].value_counts().max()
-    val2 = df["month"].max()
+    months = df['month'].value_counts().max()
+    max_month = df["month"].max()
     # this dict help convert int to string so i could produse understandable expression.
-    DAYS_WEEK = {
+    DAYS_WEEK_I_to_S = {
     6: 'saturday',
     0: 'sunday',
     1: 'monday',
@@ -133,19 +132,19 @@ def time_stats(df):
     4: 'thursday',
     5: 'friday'
     }
-    MONTHS_YEAR = {1: 'january', 2: 'february', 3: 'march', 4: 'april', 5: 'may', 6: 'june'}
-    print(f"the most common month is:  {MONTHS_YEAR[val2]   } with {val} time repeated" )
+    MONTHS_YEAR_I_to_S = {1: 'january', 2: 'february', 3: 'march', 4: 'april', 5: 'may', 6: 'june'}
+    print(f"the most common month is:  {MONTHS_YEAR_I_to_S[max_month]   } with {months} time repeated" )
 
     # TO DO: display the most common day of week
-    day = df['day_of_week'].value_counts().max()
-    day2 = df["day_of_week"].max()
-    print(f"the most common day is:  {DAYS_WEEK[day2]} with {day} time repeated" )
+    days = df['day_of_week'].value_counts().max()
+    max_day = df["day_of_week"].max()
+    print(f"the most common day is:  {DAYS_WEEK_I_to_S[max_day]} with {days} time repeated" )
 
 
     # TO DO: display the most common start hour
-    hour = df['hour'].value_counts().max()
-    hour2 = df["hour"].max()
-    print(f"the most common hour is:  {hour2} with {hour} time repeated" )
+    hours = df['hour'].value_counts().max()
+    max_hour = df["hour"].max()
+    print(f"the most common hour is:  {max_hour} with {hours} time repeated" )
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -159,8 +158,8 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    station = df["Start Station"].max()
-    print(f"the most common station:  {station}" )
+    start_station = df["Start Station"].max()
+    print(f"the most common station:  {start_station}" )
 
 
     # TO DO: display most commonly used end station
